@@ -25,10 +25,7 @@ class LoginPage {
     this.enterPassword(password);
     this.clickLogin();
   }
-
-  verifyErrorMessage() {
-    cy.xpath(this.errorMessage).should('be.visible');
-  }
+  
 }
 
 export default new LoginPage();
