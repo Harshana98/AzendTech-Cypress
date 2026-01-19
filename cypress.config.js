@@ -7,8 +7,4 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-  reporter: 'spec',
-  reporterOptions: {
-    mochaFile: 'cypress/reports/results.xml',
-  },
 });
