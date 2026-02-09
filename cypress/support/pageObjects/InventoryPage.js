@@ -11,14 +11,6 @@ class InventoryPage {
   assertCartCount(expected) {
     cy.xpath(this.cartBadge).should('have.text', expected.toString());
   }
-
-  getCartBadgeText() {
-    return cy.xpath(this.cartBadge).invoke('text');
-  }
-
-  goToCart() {
-    cy.xpath(this.cartLink).click();
-  }
 }
 
 export default new InventoryPage();
